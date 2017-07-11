@@ -1,2 +1,10 @@
-var tareas = document.getElementById('tareas-pararealizar');
-var dato = document.getElementById('dato-entregado').value;
+$(document).ready(function(){
+	$('#btn-agregar').click(function(){
+		var tareas = $('input').val();
+		$('.tareas-nuevas').append('<div class=".tareas-nuevas">' + tareas + '</div>'); 
+	});
+});
+
+$(document).on('click', '.tareas-nuevas', function() {
+    $(this).remove()
+});
