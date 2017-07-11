@@ -17,35 +17,37 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-s12">
-				<input type="text" placeholder="Ingresa la tarea">
+			<div class="col s8">
+				<input type="text" placeholder="Ingresa la tarea" id="dato-entregado">
+			</div>	
+			<div class="col s4">
+				<a href="#" id="btn-agregar" class="btn">Agregar tarea</a>
 			</div>	
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-s12">
+			<div class="col s12">
 				<h3>To Do Items:</h3>
 			</div>	
 		</div>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-s12">
-				<div id="tareas-pararealizar"></div>
+			<div class="col s12">
+				<div class="tareas-nuevas">
+					<ul id="misTareas">
+						<li><input type="checkbox" class="check"> Tarea Uno <button class="rmvBtn">x</button></li>
+						<li><input type="checkbox" class="check"> Tarea Dos <button class="rmvBtn">x</button></li>
+					</ul>
+				</div>
 			</div>	
 		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-s12">
-				<div id="tareas-hechas"></div>
-			</div>	
-		</div>
+
 	</div>
 
 
-
+	<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
