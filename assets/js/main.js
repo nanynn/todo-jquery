@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//mirando que sucede
 	$('#btn-agregar').click(function(){
 		var tareas = $('input').val();
 		if (tareas =="") {
